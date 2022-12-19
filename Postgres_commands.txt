@@ -1,0 +1,30 @@
+use database name; to run the databse
+
+create table Employee(
+	Employee_id int,
+	Employee_name varchar(40),
+	Employee_age int,
+	Employee_email varchar(40),
+	Employee_salary varchar(40),
+	Employee_address varchar(40)
+ ); 
+
+ALTER TABLE employee
+add employee_dob varchar(40);
+
+Select * from employee;
+ALTER TABLE employee add 
+ employee_companyname varchar(60);
+
+ALTER TABLE employee drop employee_dob 
+
+alter table employee rename to employee_details
+
+alter table employee_details rename column employee_address to employee_city
+
+DELETE FROM employee_details WHERE employee_id=112;
+
+SELECT DISTINCT employee_id  FROM employee_details;
+
+SELECT COUNT(DISTINCT  employee_city  )  FROM employee_details;
+
